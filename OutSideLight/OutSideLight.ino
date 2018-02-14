@@ -10,7 +10,6 @@ Author:	Ge Erghon Laurus
 #include <DNSServer.h>
 #include <ESP8266WebServer.h>
 #include <WiFiManager.h>
-#include "DebugInfo.h"
 
 #define MQTT_USERNAME ""
 #define MQTT_PASSWORD ""
@@ -20,7 +19,7 @@ const String access_point = "OutSideLight";
 const String command_topic = "outside/light/left/set";
 const String state_topic = "outside/light/left/state";
 
-const String mqtt_server = "192.168.3.76";
+const String mqtt_server = "0.0.0.0";
 const uint16 mqtt_port = 1883;
 
 unsigned long endTime = 0;
